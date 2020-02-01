@@ -1,4 +1,3 @@
-var text = document.querySelector('#hello');
-text.textContent = "Hello World";
-
-updateExports.default();
+import('./hello.js').then(updateExports => {
+    updateExports.default();
+});
