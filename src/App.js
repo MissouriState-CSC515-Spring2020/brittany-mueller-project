@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+//import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 export default function App() {
@@ -40,27 +40,27 @@ const Home = () => (
       <p></p>
       <div>
         <Link to="/details">
-        <img src='t1.jpg'></img></Link>
+        <img src='t1.jpg' alt='Travel 1'></img></Link>
       </div>
       <p></p>
       <div>
         <Link to="/details">
-        <img src='f.jpg'></img></Link>
+        <img src='f.jpg' alt='Food'></img></Link>
       </div>
       <p></p>
       <div>
         <Link to="/details">
-        <img src='t2.jpg'></img></Link>
+        <img src='t2.jpg' alt='Travel 2'></img></Link>
       </div>
       <p></p>
       <div>
         <Link to="/details">
-        <img src='a.jpg'></img></Link>
+        <img src='a.jpg' alt='Art'></img></Link>
       </div>
       <p></p>
       <div>
         <Link to="/details">
-        <img src='t3.jpg'></img></Link>
+        <img src='t3.jpg' alt='Travel 3'></img></Link>
       </div>
       <p></p>
     </center>
@@ -77,21 +77,21 @@ const Travel = () => (
       <p></p>
       <div>
         <Link to="/details">
-          <img src='t1.jpg'></img>
+          <img src='t1.jpg' alt='Travel 1'></img>
         </Link>
       </div>
     
       <p></p>
       <div>
         <Link to="/details">
-        <img src='t2.jpg'></img>
+        <img src='t2.jpg' alt='Travel 2'></img>
         </Link>
       </div>
       
       <p></p>
       <div>
         <Link to="/details">
-          <img src='t3.jpg'></img>
+          <img src='t3.jpg' alt='Travel 3'></img>
         </Link>
       </div>
       <p></p>
@@ -108,7 +108,7 @@ const Details = () => (
 
       <p></p>
       <div>
-        <img class="pad" src='t1.jpg'></img>
+        <img className="pad" src='t1.jpg' alt='Travel 1'></img>
       </div>
     
       <p></p>
