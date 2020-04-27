@@ -33,7 +33,7 @@ export default class Travel extends React.Component {
               <button onClick={this.clicked}>Get YouTube Videos</button>
                 {
                   this.state.resultyt.map((link, i) => {
-                    var frame = <div key={i} className='youtube'><iframe width="560" height="315" src={link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen SameSite="None"></iframe></div>
+                    var frame = <div key={i} className='youtube'><iframe title='YouTube Video' width="560" height="315" src={link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen SameSite="None"></iframe></div>
                     return frame;
                   })
                 }
