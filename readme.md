@@ -8,5 +8,5 @@ Run the following commands:
 'npm run build'
 'serve -s build' 
 
-Open [http://localhost:5000] to view it in the browser.
+Open [http://localhost:5000] to view it in the browser. If the button that says "Get YouTube Videos" does not appear, then try opening an incognito browser.
 
