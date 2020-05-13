@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {Suspense, lazy} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./index.css";
-import Home from "./shelbizleee.js";
-import Travel from "./megan.js";
+//import Home from "./shelbizleee.js";
+//import Travel from "./megan.js";
+
+const Home = lazy(() => import('./shelbizleee.js'));
+const Travel = lazy(() => import('./megan.js'));
+
+
 
 export default class App extends React.Component {
   render(){
@@ -22,10 +27,12 @@ export default class App extends React.Component {
                 <Link to="/travel" className="nav-item nav-link">Art</Link>
             </div>
           </nav>
+        <Suspense fallback = {<div>Loading...</div>}>  
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/travel"  component={Travel} />
+            <Route path="/" exact component={Home} /> 
+            <Route path="/travel"  component={Travel} />
         </Switch>
+        </Suspense>
         </main>
       </Router>
     );

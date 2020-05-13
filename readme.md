@@ -1,6 +1,6 @@
 # Repository for Class Project
 
-This project uses React to create a single page progressive web app which includes a router.
+This project uses React to create a single page progressive web app which includes a router and utilizes code splitting.
 
 Run the following commands:
 
